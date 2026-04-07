@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>News &amp; Announcements — St. Teresa CLC</title>
+  <link rel="icon" href="favicon2.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="inner.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="notice">Enrollment for 2026/2027 is now open! <a href="contact.html">Apply Today</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div ><img class="nav-logo"src="favicon.png" alt="Logo"></div>
+      <div class="nav-title">St. Teresa CLC <span>Children Learning Centre - Equator</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="news.html" class="active">News</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" target="_blank">Admin</a></li>
+      <li><a href="contact.html" class="cta">Enroll Now</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </div>
+  <ul class="nav-mobile" id="navMobile">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html" target="_blank">Admin Login</a></li><li><a href="contact.html">Enroll Now</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>News</span></div>
+  <h1>News &amp; Announcements</h1>
+  <p>Stay informed with the latest updates, events, and achievements from St. Teresa CLC.</p>
+</div>
+
+<section class="section bg-white">
+  <div class="container">
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <span class="filter-label">Filter by:</span>
+      <div class="filter-tags" id="filterTags">
+        <button class="tag-outline active" data-cat="all">All</button>
+        <button class="tag-outline" data-cat="Announcement">Announcements</button>
+        <button class="tag-outline" data-cat="Events">Events</button>
+        <button class="tag-outline" data-cat="Academic">Academic</button>
+        <button class="tag-outline" data-cat="Community">Community</button>
+        <button class="tag-outline" data-cat="Sports">Sports</button>
+      </div>
+    </div>
+
+    <!-- Featured article -->
+    <div class="news-featured" id="newsContainer">
+
+      <article class="news-article featured" data-cat="Announcement">
+        <div class="article-img" style="background:url(administration.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="article-body">
+          <div class="article-meta-top">
+            <span class="tag tag-gold">Announcement</span>
+            <span class="article-date">April 1, 2026</span>
+          </div>
+          <h2>2026/2027 Enrollment Now Open — Apply Before 31st April</h2>
+          <p>We are pleased to announce that applications for the upcoming academic year are officially open. Limited spaces remain across all classes — from Pre-Primary through to Grade 6. Early applicants receive priority placement and access to our Early Bird fee structure. Parents are encouraged to visit the school for a guided tour before submitting their applications. Download the application form from our website or collect one at the administration office.</p>
+          <a href="contact.html" class="btn-green" style="margin-top:16px;display:inline-block">Apply Now</a>
+        </div>
+      </article>
+
+      <!-- News grid -->
+      <div class="news-grid">
+
+        <article class="news-item" data-cat="Events">
+          <div class="item-img" style="background:url(pupils.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag">Events</span><span class="article-date">Feb 14, 2025</span></div>
+            <h3>Annual Sports Day 2025 — A Day of Champions</h3>
+            <p>Our students showcased extraordinary talent and sportsmanship at this year's Sports Day held at our main grounds. Over 400 students competed across athletics, football, relay races, and fun novelty events.</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+        <article class="news-item" data-cat="Academic">
+          <div class="item-img" style="background:url(graduation.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag">Academic</span><span class="article-date">Jan 22, 2025</span></div>
+            <h3>Grade 6 KCPE Results — 94% Merit Rate Achieved</h3>
+            <p>We are thrilled to share that our Grade 6 candidates achieved an outstanding 94% merit rate in the national assessments. Three students placed in the top 100 nationally. We are incredibly proud!</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+        <article class="news-item" data-cat="Community">
+          <div class="item-img" style="background:linear-gradient(135deg,#b2dfdb,#80cbc4)"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag">Community</span><span class="article-date">Jan 10, 2025</span></div>
+            <h3>Community Clean-Up Drive — Students Lead the Way</h3>
+            <p>Grade 4–6 students organised and led a neighbourhood clean-up drive in partnership with local community leaders, planting 50 trees and collecting over 200kg of waste.</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+        <article class="news-item" data-cat="Academic">
+          <div class="item-img" style="background:linear-gradient(135deg,#f0f4c3,#e6ee9c)"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag">Academic</span><span class="article-date">Dec 5, 2024</span></div>
+            <h3>Smart Classroom Technology Installed in All Grades</h3>
+            <p>Following our infrastructure upgrade, all classrooms from Grade 1 upwards now feature interactive smart boards and student devices as part of our digital transformation initiative.</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+        <article class="news-item" data-cat="Sports">
+          <div class="item-img" style="background:linear-gradient(135deg,#ffccbc,#ffab91)"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag">Sports</span><span class="article-date">Nov 28, 2024</span></div>
+            <h3>St. Teresa Wins Nyandarua's Regional Football Cup</h3>
+            <p>Our U-12 boys football team clinched the Nyandarua's Regional Inter-School Football Cup, defeating 16 other schools over five rounds of competition. Congratulations to the team and coaches!</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+        <article class="news-item" data-cat="Events">
+          <div class="item-img" style="background:url(graduation.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag">Events</span><span class="article-date">Nov 15, 2024</span></div>
+            <h3>End of Year Graduation Ceremony 2024 — Celebrating Our Stars</h3>
+            <p>We celebrated our Grade 6 leavers in a moving graduation ceremony attended by families, teachers, and special guests. The Class of 2024 received certificates and special awards.</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+        <article class="news-item" data-cat="Announcement">
+          <div class="item-img" style="background:linear-gradient(135deg,#b3e5fc,#81d4fa)"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag tag-gold">Announcement</span><span class="article-date">Oct 30, 2024</span></div>
+            <h3>New After-School Programme Launching January 2025</h3>
+            <p>We are excited to announce the launch of our expanded After-School Club offering coding, robotics, debating, art, and chess — available to all students from Grade 1 upwards.</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+        <article class="news-item" data-cat="Community">
+          <div class="item-img" style="background:linear-gradient(135deg,#d7ccc8,#bcaaa4)"></div>
+          <div class="item-body">
+            <div class="article-meta-top"><span class="tag">Community</span><span class="article-date">Oct 15, 2024</span></div>
+            <h3>Parents' Open Day — Thank You for an Amazing Turnout</h3>
+            <p>Over 300 families attended our Open Day, exploring classrooms, meeting teachers, and learning about our CBC curriculum. We were overwhelmed by the warm response and positive feedback.</p>
+            <a href="#" class="read-more-link">Read Full Story →</a>
+          </div>
+        </article>
+
+      </div><!-- /news-grid -->
+
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Next →</button>
+      </div>
+
+    </div><!-- /newsContainer -->
+  </div>
+</section>
+
+<!-- Newsletter signup -->
+<section class="section" style="background:var(--green-dark);padding:56px 24px">
+  <div class="container" style="text-align:center;max-width:560px">
+    <div class="section-label" style="color:var(--gold)">Stay Connected</div>
+    <h2 style="color:#fff;margin-bottom:12px">Subscribe to School News</h2>
+    <p style="color:rgba(255,255,255,0.75);margin-bottom:28px;font-size:15px">Get the latest announcements, events, and school updates delivered directly to your inbox.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" id="nlEmail" placeholder="Your email address" required/>
+      <button type="submit" class="btn-primary">Subscribe</button>
+    </form>
+    <p id="nlMsg" style="margin-top:12px;font-size:13px;min-height:18px;color:var(--gold)"></p>
+  </div>
+</section>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><h3>St. Teresa Children Learning Centre</h3><p>Nurturing bright minds and strong characters in Nyandarua and Laikipia, Kenya since 2022.</p><div class="accred-badges"><span class="acc-badge">CBC Approved</span><span class="acc-badge">MOE Registered</span><span class="acc-badge">KICD Aligned</span></div></div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Programs</h4><ul><li><a href="programs.html">Pre-Primary</a></li><li><a href="programs.html">Grade 1–3</a></li><li><a href="programs.html">Grade 4–6</a></li><li><a href="programs.html">Special Education</a></li><li><a href="programs.html">After-School Club</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="#">Nyahururu - Nairobi Road (Equator), Nyandarua</a></li><li><a href="tel:+254700000000">+254 700 000 000</a></li><li><a href="mailto:info@stteresaclc.ac.ke">info@stteresaclc.ac.ke</a></li><li><a href="#">Mon–Fri: 7:30–5:00pm</a></li></ul></div>
+    <div class="footer-col">
+      <div class="social-icons"><h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://twitter.com/" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a></li>
+          <li><a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="https://www.tiktok.com/" rel="noopener noreferrer" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 St. Teresa Children Learning Centre. All rights reserved.</span><div class="footer-bottom-links"><a href="privacy.html" class="footer-bottom-links">Privacy Policy</a><a href="safeguarding.html">Safeguarding</a><a href="terms.html">Terms&Conditions</a></div></div>
+</footer>
+<script src="script.js"></script>
+<script>
+  // Filter
+  document.querySelectorAll('#filterTags .tag-outline').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('#filterTags .tag-outline').forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      var cat=this.dataset.cat;
+      document.querySelectorAll('.news-item,.news-article').forEach(function(item){
+        item.style.display=(cat==='all'||item.dataset.cat===cat)?'':'none';
+      });
+    });
+  });
+  // Newsletter
+  document.getElementById('newsletterForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=document.getElementById('nlEmail').value.trim();
+    if(email){
+      document.getElementById('nlMsg').textContent='Thank you! You are now subscribed.';
+      document.getElementById('nlEmail').value='';
+    }
+  });
+</script>
+</body>
+</html>

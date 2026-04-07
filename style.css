@@ -1,0 +1,215 @@
+/* ============================================================
+   ST. TERESA CHILDREN LEARNING CENTRE — GLOBAL STYLESHEET
+   ============================================================ */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --green-dark:  #1a4d1a;
+  --green-mid:   #2c6e2c;
+  --green-light: #4caf50;
+  --green-pale:  #e8f5e9;
+  --gold:        #f4c430;
+  --text:        #1a2e1a;
+  --text-muted:  #5a6b5a;
+  --white:       #ffffff;
+  --card-bg:     #ffffff;
+  --section-bg:  #f7faf7;
+  --border:      #d4e8d4;
+  --shadow:      0 4px 20px rgba(30,80,30,0.10);
+  --radius:      12px;
+  --radius-sm:   8px;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family:'Nunito',sans-serif; color:var(--text); background:var(--section-bg); line-height:1.6; }
+h1,h2,h3,h4 { font-family:'Comfortaa',cursive; line-height:1.25; }
+img { display:block; max-width:100%; }
+a { text-decoration:none; }
+
+/* ── Notice Banner ── */
+.notice { background:var(--gold); padding:10px 24px; text-align:center; font-size:13px; font-weight:700; color:var(--green-dark); }
+.notice a { color:var(--green-dark); text-decoration:underline; margin-left:6px; }
+
+/* ── Nav ── */
+nav { position:sticky; top:0; z-index:1000; background:var(--green-dark); box-shadow:0 2px 12px rgba(0,0,0,0.2); }
+.nav-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0 24px; height:64px; }
+.nav-brand { display:flex; align-items:center; gap:12px; flex-shrink:0; }
+.nav-logo { width:40px; height:40px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Comfortaa',cursive; font-weight:700; font-size:15px; color:var(--green-dark); flex-shrink:0; }
+.nav-title { color:#fff; font-family:'Comfortaa',cursive; font-size:15px; font-weight:700; line-height:1.2; }
+.nav-title span { display:block; font-size:11px; font-weight:400; opacity:.75; font-family:'Nunito',sans-serif; }
+.nav-links { display:flex; gap:4px; list-style:none; }
+.nav-links a { color:rgba(255,255,255,0.85); font-size:13px; font-weight:600; padding:7px 13px; border-radius:6px; transition:background .2s,color .2s; white-space:nowrap; }
+.nav-links a:hover, .nav-links a.active { background:rgba(255,255,255,0.15); color:#fff; }
+.nav-links .cta { background:var(--gold); color:var(--green-dark) !important; }
+.nav-links .cta:hover { background:#e6b820; }
+.nav-toggle { display:none; background:none; border:none; color:#fff; font-size:22px; cursor:pointer; padding:6px 10px; }
+.nav-mobile { display:none; flex-direction:column; list-style:none; background:var(--green-dark); padding:12px 24px 20px; border-top:1px solid rgba(255,255,255,0.1); }
+.nav-mobile.open { display:flex; }
+.nav-mobile li a { display:block; padding:10px 0; color:rgba(255,255,255,0.85); font-size:15px; font-weight:600; border-bottom:1px solid rgba(255,255,255,0.08); transition:color .2s; }
+.nav-mobile li a:hover { color:var(--gold); }
+
+/* ── Buttons ── */
+.btn-primary { background:var(--gold); color:var(--green-dark); padding:13px 30px; border-radius:8px; font-weight:700; font-size:15px; font-family:'Nunito',sans-serif; transition:transform .2s,background .2s; display:inline-block; cursor:pointer; border:none; }
+.btn-primary:hover { background:#e6b820; transform:translateY(-2px); }
+.btn-outline { background:var(--gold); color:var(--green-dark); padding:13px 30px; border-radius:8px; font-weight:700; font-size:15px; font-family:'Nunito',sans-serif; transition:transform .2s,background .2s; display:inline-block; cursor:pointer; border:none; }
+.btn-outline:hover { background:#e6b820; transform:translateY(-2px); }
+.btn-green { background:var(--green-mid); color:#fff; padding:11px 26px; border-radius:8px; font-weight:700; font-size:14px; font-family:'Nunito',sans-serif; display:inline-block; transition:background .2s; border:none; cursor:pointer; }
+.btn-green:hover { background:var(--green-dark); }
+
+/* ── Layout ── */
+.section { padding:72px 24px; }
+.bg-white { background:#fff; }
+.bg-gray  { background:var(--section-bg); }
+.container { max-width:1100px; margin:0 auto; }
+.section-label { font-size:12px; font-weight:700; letter-spacing:1.5px; color:var(--green-light); text-transform:uppercase; margin-bottom:10px; font-family:'Nunito',sans-serif; }
+.section-title { font-size:clamp(24px,4vw,36px); color:var(--green-dark); margin-bottom:14px; }
+.section-sub { font-size:16px; color:var(--text-muted); max-width:560px; line-height:1.7; margin-bottom:48px; }
+.section-header-center { text-align:center; margin-bottom:48px; }
+.section-header-center .section-sub { margin-left:auto; margin-right:auto; }
+
+/* ── Page Hero (inner pages) ── */
+.page-hero { background:linear-gradient(135deg,#1a4d1a 0%,#2c6e2c 60%,#1f5c1f 100%); padding:64px 24px; text-align:center; }
+.page-hero h1 { font-size:clamp(26px,4vw,42px); color:#fff; margin-bottom:12px; }
+.page-hero p { font-size:16px; color:rgba(255,255,255,0.82); max-width:520px; margin:0 auto; line-height:1.7; }
+.breadcrumb { display:flex; align-items:center; justify-content:center; gap:8px; font-size:13px; color:rgba(255,255,255,0.6); margin-bottom:16px; flex-wrap:wrap; }
+.breadcrumb a { color:rgba(255,255,255,0.75); transition:color .2s; }
+.breadcrumb a:hover { color:#fff; }
+.breadcrumb span { color:rgba(255,255,255,0.4); }
+
+/* ── Tags / Badges ── */
+.tag { background:var(--green-pale); color:var(--green-mid); font-size:11px; font-weight:700; padding:3px 10px; border-radius:10px; display:inline-block; }
+.tag-gold { background:var(--gold); color:var(--green-dark); }
+.tag-outline { background:transparent; border:1px solid var(--border); color:var(--text-muted); font-size:11px; padding:3px 10px; border-radius:10px; display:inline-block; cursor:pointer; transition:background .2s; }
+.tag-outline:hover, .tag-outline.active { background:var(--green-pale); border-color:var(--green-light); color:var(--green-mid); }
+
+/* ── Card base ── */
+.card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; transition:transform .2s,box-shadow .2s; }
+.card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+
+/* ── Footer ── */
+footer { background:#0e2e0e; padding:52px 24px 24px; color:rgba(255,255,255,0.7); }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr 1fr; gap:40px; margin-bottom:40px; max-width:1100px; margin-left:auto; margin-right:auto; }
+.footer-brand h3 { font-family:'Comfortaa',cursive; color:#fff; font-size:17px; margin-bottom:10px; }
+.footer-brand p { font-size:13px; line-height:1.7; max-width:280px; }
+.accred-badges { display:flex; gap:8px; margin-top:16px; flex-wrap:wrap; }
+.acc-badge { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:6px; padding:4px 10px; font-size:11px; color:rgba(255,255,255,0.75); }
+.footer-col h4 { font-family:'Comfortaa',cursive; color:#fff; font-size:14px; margin-bottom:14px; }
+.footer-col ul { list-style:none; }
+.footer-col ul li { margin-bottom:8px; }
+.footer-col ul li a { color:rgba(255,255,255,0.6); font-size:13px; transition:color .2s; }
+.footer-col ul li a:hover { color:#d4af37; }
+.footer-bottom { max-width:1100px; margin:0 auto; border-top:1px solid rgba(255,255,255,0.1); padding-top:20px; display:flex; align-items:center; justify-content:space-between; font-size:12px; flex-wrap:wrap; gap:10px; }
+.footer-bottom-links { display:flex; gap:16px; }
+.footer-bottom-links a { color:rgba(255,255,255,0.5); transition:color .2s; }
+.footer-bottom-links a:hover { color:#d4af37; }
+.social-icons {
+    margin-bottom: 10px;
+  }
+  
+.social-icons a {
+    color: #d4af37;
+    font-size: 1.4rem;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+.social-icons a:hover {
+    color: #d4af37;
+    transform: scale(1.5);
+  }
+/* ── Privacy Policy Page Styling ── */
+.footer-bottom-links a.privacy-link {
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.footer-bottom-links a.privacy-link:hover {
+  color: #fff;
+}
+.privacy-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 72px 24px;
+  background: var(--section-bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-family: 'Nunito', sans-serif;
+}
+
+.privacy-page h1,
+.privacy-page h2,
+.privacy-page h3,
+.privacy-page h4 {
+  font-family: 'Comfortaa', cursive;
+  color: var(--green-dark);
+  margin-bottom: 16px;
+}
+
+.privacy-page h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.privacy-page h2 {
+  font-size: clamp(22px, 4vw, 32px);
+  margin-top: 32px;
+}
+
+.privacy-page p {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.privacy-page ul {
+  list-style: disc inside;
+  margin-bottom: 16px;
+}
+
+.privacy-page ul li {
+  margin-bottom: 10px;
+}
+
+.privacy-page a {
+  color: var(--green-mid);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.privacy-page a:hover {
+  color: var(--gold);
+}
+
+.privacy-page .last-updated {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+.privacy-page .contact-info li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+/* ── Responsive ── */
+@media(max-width:768px){
+  .privacy-page {
+    padding: 48px 16px;
+  }
+
+  .privacy-page h1 {
+    font-size: clamp(24px, 6vw, 36px);
+  }
+
+  .privacy-page h2 {
+    font-size: clamp(20px, 5vw, 28px);
+  }
+}
+
+/* ── Responsive ── */
+@media(max-width:900px){ .footer-grid{grid-template-columns:1fr 1fr;} }
+@media(max-width:768px){ .nav-links{display:none;} .nav-toggle{display:block;} }
+@media(max-width:500px){ .footer-grid{grid-template-columns:1fr;} .footer-bottom{flex-direction:column;text-align:center;} }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Gallery — St. Teresa CLC</title>
+  <link rel="icon" href="favicon2.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/><link rel="stylesheet" href="inner.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="notice">Enrollment for 2026/2027 is now open! <a href="contact.html">Apply Today</a></div>
+<nav><div class="nav-inner"><a href="index.html" class="nav-brand"><div ><img class="nav-logo"src="favicon.png" alt="Logo"></div><div class="nav-title">St. Teresa CLC <span>Children Learning Centre - Equator</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html" target="_blank">Admin</a></li><li><a href="contact.html" class="cta">Enroll Now</a></li></ul><button class="nav-toggle" id="navToggle">&#9776;</button></div><ul class="nav-mobile" id="navMobile"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html">Enroll Now</a></li></ul></nav>
+
+<div class="page-hero"><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Gallery</span></div><h1>School Gallery</h1><p>A vibrant look into the daily life, events, and achievements at St. Teresa Children Learning Centre.</p></div>
+
+<section class="section bg-white"><div class="container">
+  <div class="gallery-filter" id="galleryFilter">
+    <button class="tag-outline active" data-cat="all">All</button>
+    <button class="tag-outline" data-cat="classroom">Classrooms</button>
+    <button class="tag-outline" data-cat="sports">Sports</button>
+    <button class="tag-outline" data-cat="events">Events</button>
+    <button class="tag-outline" data-cat="arts">Arts &amp; Music</button>
+    <button class="tag-outline" data-cat="campus">Campus</button>
+  </div>
+  <div class="gallery-masonry" id="galleryGrid">
+    <div class="gallery-masonry-item" data-cat="events"><div class="gal-placeholder tall" style="background:url(graduation.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"><svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:var(--green-dark);fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Graduation 2024</div><div class="gal-overlay"><div class="gal-overlay-text">Graduation Ceremony 2024</div></div></div>
+    <div class="gallery-masonry-item" data-cat="classroom"><div class="gal-placeholder" style="background:linear-gradient(135deg,#c8e6c9,#a5d6a7)"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:var(--green-dark);fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Smart Classroom</div><div class="gal-overlay"><div class="gal-overlay-text">Smart Classroom</div></div></div>
+    <div class="gallery-masonry-item" data-cat="sports"><div class="gal-placeholder" style="background:linear-gradient(135deg,#dcedc8,#c5e1a5)"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:var(--green-dark);fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Sports Day</div><div class="gal-overlay"><div class="gal-overlay-text">Sports Day 2025</div></div></div>
+    <div class="gallery-masonry-item" data-cat="campus"><div class="gal-placeholder tall" style="background:url(administration.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"><svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:#00695c;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Administration Block</div><div class="gal-overlay"><div class="gal-overlay-text">Administration Block</div></div></div>
+    <div class="gallery-masonry-item" data-cat="arts"><div class="gal-placeholder" style="background:linear-gradient(135deg,#f8bbd0,#f48fb1)"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:#880e4f;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Arts Exhibition</div><div class="gal-overlay"><div class="gal-overlay-text">Annual Arts Exhibition</div></div></div>
+    <div class="gallery-masonry-item" data-cat="classroom"><div class="gal-placeholder" style="background:linear-gradient(135deg,#fff9c4,#fff176)"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:#f57f17;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Computer Lab</div><div class="gal-overlay"><div class="gal-overlay-text">Computer Lab</div></div></div>
+    <div class="gallery-masonry-item" data-cat="sports"><div class="gal-placeholder tall" style="background:linear-gradient(135deg,#bbdefb,#90caf9)"><svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:#1565c0;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Football Team</div><div class="gal-overlay"><div class="gal-overlay-text">Regional Football Champions 2024</div></div></div>
+    <div class="gallery-masonry-item" data-cat="events"><div class="gal-placeholder" style="background:linear-gradient(135deg,#d1c4e9,#b39ddb)"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:#4527a0;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Cultural Day</div><div class="gal-overlay"><div class="gal-overlay-text">Cultural Day Celebrations</div></div></div>
+    <div class="gallery-masonry-item" data-cat="campus"><div class="gal-placeholder" style="background:url(playground.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:#bf360c;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Playground</div><div class="gal-overlay"><div class="gal-overlay-text">Our Playground</div></div></div>
+    <div class="gallery-masonry-item" data-cat="arts"><div class="gal-placeholder tall" style="background:linear-gradient(135deg,#f0f4c3,#e6ee9c)"><svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:#827717;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Music Class</div><div class="gal-overlay"><div class="gal-overlay-text">Music &amp; Performing Arts</div></div></div>
+    <div class="gallery-masonry-item" data-cat="events"><div class="gal-placeholder" style="background:url(pupils.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:var(--green-dark);fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Open Day</div><div class="gal-overlay"><div class="gal-overlay-text">Parents' Open Day 2024</div></div></div>
+    <div class="gallery-masonry-item" data-cat="classroom"><div class="gal-placeholder" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9)"><svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:#283593;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Library</div><div class="gal-overlay"><div class="gal-overlay-text">School Library</div></div></div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><h3>St. Teresa Children Learning Centre</h3><p>Nurturing bright minds and strong characters in Nyandarua and Laikipia, Kenya since 2022.</p><div class="accred-badges"><span class="acc-badge">CBC Approved</span><span class="acc-badge">MOE Registered</span><span class="acc-badge">KICD Aligned</span></div></div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Programs</h4><ul><li><a href="programs.html">Pre-Primary</a></li><li><a href="programs.html">Grade 1–3</a></li><li><a href="programs.html">Grade 4–6</a></li><li><a href="programs.html">Special Education</a></li><li><a href="programs.html">After-School Club</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="#">Nyahururu - Nairobi Road (Equator), Nyandarua</a></li><li><a href="tel:+254700000000">+254 700 000 000</a></li><li><a href="mailto:info@stteresaclc.ac.ke">info@stteresaclc.ac.ke</a></li><li><a href="#">Mon–Fri: 7:30–5:00pm</a></li></ul></div>
+    <div class="footer-col">
+      <div class="social-icons"><h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://twitter.com/" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a></li>
+          <li><a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="https://www.tiktok.com/" rel="noopener noreferrer" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 St. Teresa Children Learning Centre. All rights reserved.</span><div class="footer-bottom-links"><a href="privacy.html" class="footer-bottom-links">Privacy Policy</a><a href="safeguarding.html">Safeguarding</a><a href="terms.html">Terms&Conditions</a></div></div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('#galleryFilter .tag-outline').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('#galleryFilter .tag-outline').forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      var cat=this.dataset.cat;
+      document.querySelectorAll('.gallery-masonry-item').forEach(function(item){
+        item.style.display=(cat==='all'||item.dataset.cat===cat)?'':'none';
+      });
+    });
+  });
+</script>
+</body></html>

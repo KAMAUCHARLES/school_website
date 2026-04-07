@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Terms of Use - St. Teresa Children Learning Centre</title>
+  <link rel="icon" href="favicon2.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    .terms-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 72px 24px;
+      color: var(--text);
+      line-height: 1.7;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .terms-page h1,
+    .terms-page h2 {
+      font-family: 'Comfortaa', cursive;
+      color: var(--green-dark);
+      margin-bottom: 16px;
+    }
+
+    .terms-page h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .terms-page h2 {
+      font-size: clamp(22px, 4vw, 32px);
+      margin-top: 32px;
+      position: relative;
+      padding-left: 14px;
+    }
+
+    .terms-page h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 100%;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+
+    .terms-page p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .terms-page ul {
+      list-style: none;
+      margin-bottom: 16px;
+      padding-left: 0;
+    }
+
+    .terms-page ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+    }
+
+    .terms-page ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5em;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background: var(--green-mid);
+      border-radius: 50%;
+    }
+
+    .terms-page a {
+      color: var(--green-mid);
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .terms-page a:hover {
+      color: var(--gold);
+    }
+
+    .terms-section {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .terms-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media(max-width:768px){
+      .terms-page { padding: 48px 16px; }
+      .terms-page h1 { font-size: clamp(24px, 6vw, 36px); }
+      .terms-page h2 { font-size: clamp(20px, 5vw, 28px); }
+      .terms-section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="notice">Enrollment for 2026/2027 is now open! <a href="contact.html">Apply Today</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div><img class="nav-logo" src="favicon.png" alt="Logo"></div>
+      <div class="nav-title">St. Teresa CLC <span>Children Learning Centre - Equator</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" target="_blank">Admin</a></li>
+      <li><a href="contact.html" class="cta">Enroll Now</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </div>
+  <ul class="nav-mobile" id="navMobile">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html" target="_blank">Admin Login</a></li>
+    <li><a href="contact.html">Enroll Now</a></li>
+  </ul>
+</nav>
+
+<section class="terms-page">
+  <h1>Terms of Use</h1>
+  <p class="last-updated">Last Updated: April 2026</p>
+
+  <div class="terms-section">
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing and using this website, you agree to comply with these Terms of Use. If you do not agree, please do not use the site.</p>
+  </div>
+
+  <div class="terms-section">
+    <h2>2. Use of Content</h2>
+    <p>All content, including text, images, and videos, is owned by St. Teresa Children Learning Centre. You may not copy, reproduce, or distribute it without permission.</p>
+  </div>
+
+  <div class="terms-section">
+    <h2>3. User Conduct</h2>
+    <ul>
+      <li>Do not use the website for illegal purposes</li>
+      <li>Do not post harmful or offensive content</li>
+      <li>Do not attempt to hack or interfere with website functionality</li>
+    </ul>
+  </div>
+
+  <div class="terms-section">
+    <h2>4. Privacy</h2>
+    <p>Use of personal information is governed by our <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <div class="terms-section">
+    <h2>5. Limitation of Liability</h2>
+    <p>The website and its content are provided "as is." We are not liable for any damages arising from your use of the site.</p>
+  </div>
+
+  <div class="terms-section">
+    <h2>6. Changes to Terms</h2>
+    <p>We may update these Terms of Use at any time. Changes will be posted here with the updated date.</p>
+  </div>
+
+  <div class="terms-section">
+    <h2>7. Contact</h2>
+    <p>For questions about these terms, contact us at <a href="mailto:info@stteresaclc.ac.ke">info@stteresaclc.ac.ke</a>.</p>
+  </div>
+</section>
+
+<!-- FOOTER identical to index.html -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><h3>St. Teresa Children Learning Centre</h3><p>Nurturing bright minds and strong characters in Nyandarua and Laikipia, Kenya since 2022.</p><div class="accred-badges"><span class="acc-badge">CBC Approved</span><span class="acc-badge">MOE Registered</span><span class="acc-badge">KICD Aligned</span></div></div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Programs</h4><ul><li><a href="programs.html">Pre-Primary</a></li><li><a href="programs.html">Grade 1–3</a></li><li><a href="programs.html">Grade 4–6</a></li><li><a href="programs.html">Special Education</a></li><li><a href="programs.html">After-School Club</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="#">Nyahururu - Nairobi Road (Equator), Nyandarua</a></li><li><a href="tel:+254700000000">+254 700 000 000</a></li><li><a href="mailto:info@stteresaclc.ac.ke">info@stteresaclc.ac.ke</a></li><li><a href="#">Mon–Fri: 7:30–5:00pm</a></li></ul></div>
+    <div class="footer-col">
+      <div class="social-icons"><h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://twitter.com/" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a></li>
+          <li><a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="https://www.tiktok.com/" rel="noopener noreferrer" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 St. Teresa Children Learning Centre. All rights reserved.</span><div class="footer-bottom-links"><a href="privacy.html" class="footer-bottom-links">Privacy Policy</a><a href="safeguarding.html">Safeguarding</a><a href="terms.html">Terms&Conditions</a></div></div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.terms-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+  });
+</script>
+</body>
+</html>

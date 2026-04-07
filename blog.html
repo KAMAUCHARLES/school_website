@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Blog — St. Teresa CLC</title>
+  <link rel="icon" href="favicon2.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="inner.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="notice">Enrollment for 2026/2027 is now open! <a href="contact.html">Apply Today</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div ><img class="nav-logo"src="favicon.png" alt="Logo"></div>
+      <div class="nav-title">St. Teresa CLC <span>Children Learning Centre - Equator</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" target="_blank">Admin</a></li>
+      <li><a href="contact.html" class="cta">Enroll Now</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </div>
+  <ul class="nav-mobile" id="navMobile">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html" target="_blank">Admin Login</a></li><li><a href="contact.html">Enroll Now</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Blog</span></div>
+  <h1>Our School Blog</h1>
+  <p>Insights, tips, and stories from our educators, parents, and community — all about raising and educating great children.</p>
+</div>
+
+<section class="section bg-white">
+  <div class="container">
+    <div class="blog-layout">
+
+      <!-- Main blog feed -->
+      <main class="blog-main">
+
+        <!-- Filter bar -->
+        <div class="filter-bar" style="margin-bottom:32px">
+          <span class="filter-label">Topics:</span>
+          <div class="filter-tags" id="blogFilter">
+            <button class="tag-outline active" data-cat="all">All</button>
+            <button class="tag-outline" data-cat="Parenting">Parenting</button>
+            <button class="tag-outline" data-cat="STEM">STEM</button>
+            <button class="tag-outline" data-cat="Wellbeing">Wellbeing</button>
+            <button class="tag-outline" data-cat="Teaching">Teaching</button>
+            <button class="tag-outline" data-cat="Nutrition">Nutrition</button>
+          </div>
+        </div>
+
+        <!-- Featured post -->
+        <article class="blog-post featured-post" data-cat="Parenting">
+          <div class="post-img large" style="background:linear-gradient(135deg,#a5d6a7,#66bb6a)"></div>
+          <div class="post-body">
+            <div class="post-meta-top">
+              <span class="tag">Parenting</span>
+              <span class="post-date">February 28, 2025</span>
+              <span class="read-time">5 min read</span>
+            </div>
+            <h2>5 Ways to Support Your Child's Learning at Home</h2>
+            <p>Research consistently shows that parental involvement is one of the strongest predictors of a child's academic success. But many parents wonder: what does meaningful involvement actually look like on a busy weekday evening? Here are five practical, research-backed habits our teachers recommend to every parent.</p>
+            <p>The first — and perhaps most powerful — habit is the "daily debrief": spending just 10 minutes each evening asking your child not what they learned, but what they found most surprising or interesting. This shifts the conversation from a performance review to genuine curiosity.</p>
+            <div class="post-author-bar">
+              <div class="post-author-av" style="background:#2c6e2c">JM</div>
+              <div>
+                <div class="post-author-name">Ms. Jane Muthoni</div>
+                <div class="post-author-role">Grade 1 Teacher &amp; Literacy Specialist</div>
+              </div>
+              <a href="#" class="btn-green" style="margin-left:auto">Read Full Post</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post grid -->
+        <div class="blog-grid" id="blogGrid">
+
+          <article class="blog-post-card" data-cat="STEM">
+            <div class="post-img" style="background:linear-gradient(135deg,#c8e6c9,#a5d6a7)"></div>
+            <div class="post-card-body">
+              <div class="post-meta-top"><span class="tag">STEM</span><span class="post-date">Feb 10, 2025</span></div>
+              <h3>Why Coding in Primary School Opens Doors for Life</h3>
+              <p>Our Head of STEM explains why we introduced coding at Grade 3 and what it means for your child's future career opportunities.</p>
+              <div class="post-card-footer">
+                <div class="post-author-chip"><div class="post-av" style="background:#388e3c">PO</div><span>Mr. Peter Otieno</span></div>
+                <span class="read-time">4 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-post-card" data-cat="Wellbeing">
+            <div class="post-img" style="background:linear-gradient(135deg,#dcedc8,#c5e1a5)"></div>
+            <div class="post-card-body">
+              <div class="post-meta-top"><span class="tag">Wellbeing</span><span class="post-date">Jan 30, 2025</span></div>
+              <h3>The Power of Arts Education in Child Development</h3>
+              <p>Creative arts dramatically improve emotional regulation, focus, and academic performance. Here's the evidence — and how we apply it.</p>
+              <div class="post-card-footer">
+                <div class="post-author-chip"><div class="post-av" style="background:#4caf50">AW</div><span>Mrs. Alice Wanjiku</span></div>
+                <span class="read-time">6 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-post-card" data-cat="Teaching">
+            <div class="post-img" style="background:linear-gradient(135deg,#b2dfdb,#80cbc4)"></div>
+            <div class="post-card-body">
+              <div class="post-meta-top"><span class="tag">Teaching</span><span class="post-date">Jan 15, 2025</span></div>
+              <h3>Understanding CBC: A Plain-Language Guide for Parents</h3>
+              <p>Kenya's Competency-Based Curriculum can feel confusing. Our Deputy Head breaks it down into simple terms every parent can understand.</p>
+              <div class="post-card-footer">
+                <div class="post-author-chip"><div class="post-av" style="background:#1a4d1a">DK</div><span>Mr. David Kamau</span></div>
+                <span class="read-time">7 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-post-card" data-cat="Nutrition">
+            <div class="post-img" style="background:linear-gradient(135deg,#fff9c4,#fff176)"></div>
+            <div class="post-card-body">
+              <div class="post-meta-top"><span class="tag">Nutrition</span><span class="post-date">Jan 5, 2025</span></div>
+              <h3>Brain Foods: What Your Child Eats and How It Affects Learning</h3>
+              <p>Our school nutritionist shares the science behind brain-boosting foods and what to include in your child's lunchbox for peak concentration.</p>
+              <div class="post-card-footer">
+                <div class="post-author-chip"><div class="post-av" style="background:#f57f17">SN</div><span>Ms. Sarah Njoroge</span></div>
+                <span class="read-time">5 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-post-card" data-cat="Wellbeing">
+            <div class="post-img" style="background:linear-gradient(135deg,#f8bbd0,#f48fb1)"></div>
+            <div class="post-card-body">
+              <div class="post-meta-top"><span class="tag">Wellbeing</span><span class="post-date">Dec 18, 2024</span></div>
+              <h3>Helping Children Handle Exam Anxiety — Practical Strategies</h3>
+              <p>Exam season brings anxiety for many children. Our school counsellor shares evidence-based techniques to help your child stay calm and confident.</p>
+              <div class="post-card-footer">
+                <div class="post-author-chip"><div class="post-av" style="background:#c2185b">GK</div><span>Ms. Grace Kariuki</span></div>
+                <span class="read-time">6 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-post-card" data-cat="Parenting">
+            <div class="post-img" style="background:linear-gradient(135deg,#d1c4e9,#b39ddb)"></div>
+            <div class="post-card-body">
+              <div class="post-meta-top"><span class="tag">Parenting</span><span class="post-date">Dec 5, 2024</span></div>
+              <h3>Screen Time and Learning: Finding the Right Balance</h3>
+              <p>Technology is here to stay — but how much is too much? We explore current research and our school's recommended approach to healthy screen habits.</p>
+              <div class="post-card-footer">
+                <div class="post-author-chip"><div class="post-av" style="background:#512da8">JM</div><span>Ms. Jane Muthoni</span></div>
+                <span class="read-time">5 min</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /blog-grid -->
+
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">Next →</button>
+        </div>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <div class="sidebar-card">
+          <h4>Search Posts</h4>
+          <div class="search-box">
+            <input type="text" placeholder="Search the blog…" id="blogSearch"/>
+            <button onclick="filterSearch()">&#128269;</button>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h4>Popular Topics</h4>
+          <div class="topic-list">
+            <a href="#" class="topic-item"><span>Parenting Tips</span><span class="topic-count">12</span></a>
+            <a href="#" class="topic-item"><span>STEM &amp; Coding</span><span class="topic-count">8</span></a>
+            <a href="#" class="topic-item"><span>Child Wellbeing</span><span class="topic-count">11</span></a>
+            <a href="#" class="topic-item"><span>Teaching &amp; CBC</span><span class="topic-count">9</span></a>
+            <a href="#" class="topic-item"><span>Nutrition</span><span class="topic-count">5</span></a>
+            <a href="#" class="topic-item"><span>Arts &amp; Music</span><span class="topic-count">7</span></a>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h4>Our Writers</h4>
+          <div class="writer-list">
+            <div class="writer-item"><div class="writer-av" style="background:#2c6e2c">JM</div><div><div class="writer-name">Ms. Jane Muthoni</div><div class="writer-role">Literacy &amp; Grade 1</div></div></div>
+            <div class="writer-item"><div class="writer-av" style="background:#388e3c">PO</div><div><div class="writer-name">Mr. Peter Otieno</div><div class="writer-role">STEM Lead</div></div></div>
+            <div class="writer-item"><div class="writer-av" style="background:#4caf50">AW</div><div><div class="writer-name">Mrs. Alice Wanjiku</div><div class="writer-role">Arts &amp; Music</div></div></div>
+            <div class="writer-item"><div class="writer-av" style="background:#1a4d1a">DK</div><div><div class="writer-name">Mr. David Kamau</div><div class="writer-role">Grade 6 &amp; Exams</div></div></div>
+          </div>
+        </div>
+
+        <div class="sidebar-card newsletter-side">
+          <h4>Get New Posts by Email</h4>
+          <p>Join 400+ parents who receive our weekly insights.</p>
+          <form id="sideNlForm">
+            <input type="email" id="sideNlEmail" placeholder="Your email address"/>
+            <button type="submit" class="btn-green" style="width:100%;margin-top:10px">Subscribe</button>
+          </form>
+          <p id="sideNlMsg" style="margin-top:8px;font-size:12px;color:var(--green-light);min-height:16px"></p>
+        </div>
+      </aside>
+
+    </div><!-- /blog-layout -->
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><h3>St. Teresa Children Learning Centre</h3><p>Nurturing bright minds and strong characters in Nyandarua and Laikipia, Kenya since 2022.</p><div class="accred-badges"><span class="acc-badge">CBC Approved</span><span class="acc-badge">MOE Registered</span><span class="acc-badge">KICD Aligned</span></div></div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="news.html">News</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Programs</h4><ul><li><a href="programs.html">Pre-Primary</a></li><li><a href="programs.html">Grade 1–3</a></li><li><a href="programs.html">Grade 4–6</a></li><li><a href="programs.html">Special Education</a></li><li><a href="programs.html">After-School Club</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="#">Nyahururu - Nairobi Road (Equator), Nyandarua</a></li><li><a href="tel:+254700000000">+254 700 000 000</a></li><li><a href="mailto:info@stteresaclc.ac.ke">info@stteresaclc.ac.ke</a></li><li><a href="#">Mon–Fri: 7:30–5:00pm</a></li></ul></div>
+    <div class="footer-col">
+      <div class="social-icons"><h4>Social Media</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://twitter.com/" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a></li>
+          <li><a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="https://www.tiktok.com/" rel="noopener noreferrer" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 St. Teresa Children Learning Centre. All rights reserved.</span><div class="footer-bottom-links"><a href="privacy.html" class="footer-bottom-links">Privacy Policy</a><a href="safeguarding.html">Safeguarding</a><a href="terms.html">Terms&Conditions</a></div></div>
+</footer>
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('#blogFilter .tag-outline').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('#blogFilter .tag-outline').forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      var cat=this.dataset.cat;
+      document.querySelectorAll('.blog-post-card,.featured-post').forEach(function(item){
+        item.style.display=(cat==='all'||item.dataset.cat===cat)?'':'none';
+      });
+    });
+  });
+  document.getElementById('sideNlForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('sideNlMsg').textContent='Subscribed! Thank you.';
+    document.getElementById('sideNlEmail').value='';
+  });
+  function filterSearch(){
+    var q=document.getElementById('blogSearch').value.toLowerCase();
+    document.querySelectorAll('.blog-post-card').forEach(function(card){
+      var text=card.textContent.toLowerCase();
+      card.style.display=text.includes(q)?'':'none';
+    });
+  }
+  document.getElementById('blogSearch').addEventListener('keydown',function(e){if(e.key==='Enter')filterSearch();});
+</script>
+</body>
+</html>
