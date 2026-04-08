@@ -6,28 +6,26 @@
 <title>Admin Login - St. Teresa Children Learning Centre</title>
 
 <link rel="icon" href="favicon2.png" type="image/x-icon"/>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-html, body {
-  height: 100%;
+body {
   font-family: 'Nunito', sans-serif;
-  background: #f0f7f0;
-}
-
-/* Layout container */
-.page {
   height: 100vh;
+  overflow: hidden; /* 🚀 NO SCROLL */
+  background: linear-gradient(135deg, #4caf50, #81c784);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+/* Layout wrapper */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* Center area */
@@ -38,56 +36,56 @@ html, body {
   align-items: center;
 }
 
-/* Login Card */
-.login-card {
-  width: 100%;
-  max-width: 360px;
-  padding: 30px 25px;
-  background: #fff;
-  border-radius: 12px;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+/* Login card */
+.login-container {
+  background: rgba(255,255,255,0.95);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   text-align: center;
+  width: 100%;
+  max-width: 380px;
 }
 
 /* Logo */
-.logo {
-  width: 60px;
-  margin-bottom: 10px;
+.school-logo {
+  width: 80px;
+  margin-bottom: 8px;
 }
 
 /* School name */
 .school-name {
   font-family: 'Comfortaa', cursive;
-  font-size: 18px;
-  color: #2e7d32;
-  margin-bottom: 20px;
+  color: #1b5e20;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 /* Title */
-.login-card h2 {
-  font-size: 22px;
+.login-container h2 {
+  color: #2e7d32;
+  font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
 }
 
 /* Inputs */
-.input-group {
+.input-wrapper {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
-.input-group input {
+.login-container input {
   width: 100%;
-  padding: 12px 40px 12px 12px;
-  border-radius: 6px;
+  padding: 11px 40px 11px 12px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 
-.input-group input:focus {
-  border-color: #2e7d32;
+.login-container input:focus {
   outline: none;
+  border-color: #388e3c;
 }
 
 /* Eye icon */
@@ -97,90 +95,82 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #666;
+  color: #555;
 }
 
-/* Remember + Forgot */
-.options {
+/* Remember row */
+.remember-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
 }
 
-.options label {
+.remember-wrapper label {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.options input {
+.remember-wrapper input {
   margin: 0;
 }
 
-.options a {
-  text-decoration: none;
-  color: #2e7d32;
-}
-
-.options a:hover {
-  text-decoration: underline;
-}
-
 /* Button */
-button {
-  width: 100%;
-  padding: 12px;
+.login-container button {
   background: #2e7d32;
-  border: none;
   color: #fff;
-  border-radius: 6px;
-  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
   cursor: pointer;
 }
 
-button:hover {
+.login-container button:hover {
   background: #1b5e20;
 }
 
 /* Error */
-#error {
-  margin-top: 12px;
+#loginError {
   color: red;
-  font-size: 13px;
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
 /* Footer */
-.footer {
+footer {
   text-align: center;
-  font-size: 12px;
+  background: #1b5e20;
+  color: #fff;
   padding: 10px;
-  color: #555;
+  font-size: 0.85rem;
 }
 
-.footer a {
+footer a {
+  color: #a5d6a7;
   margin: 0 8px;
-  color: #2e7d32;
   text-decoration: none;
 }
 
-.footer a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 
-/* MOBILE PERFECT FIT */
-@media (max-height: 700px) {
-  .login-card {
-    padding: 20px;
+/* RESPONSIVE FIX */
+@media(max-height: 700px){
+  .login-container {
+    padding: 30px 20px;
   }
 
   .school-name {
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  .login-card h2 {
-    font-size: 20px;
+  .login-container h2 {
+    font-size: 22px;
   }
 }
 </style>
@@ -192,79 +182,76 @@ button:hover {
 
   <!-- CENTER -->
   <div class="main">
-    <div class="login-card">
-      <img src="favicon2.png" class="logo" alt="logo">
+    <div class="login-container">
+      <img src="favicon2.png" class="school-logo" alt="Logo">
       <div class="school-name">St. Teresa Children Learning Centre</div>
       <h2>Admin Login</h2>
 
       <form id="loginForm">
-        <div class="input-group">
+        <div class="input-wrapper">
           <input type="text" id="username" placeholder="Username" required>
         </div>
 
-        <div class="input-group">
+        <div class="input-wrapper">
           <input type="password" id="password" placeholder="Password" required>
           <i class="fa fa-eye toggle-password" id="togglePassword"></i>
         </div>
 
-        <div class="options">
+        <div class="remember-wrapper">
           <label>
-            <input type="checkbox" id="rememberMe"> Remember me
+            <input type="checkbox" id="rememberMe"> Remember Me
           </label>
-          <a href="#">Forgot password?</a>
+          <a href="#">Forgot?</a>
         </div>
 
         <button type="submit">Login</button>
       </form>
 
-      <div id="error"></div>
+      <p id="loginError"></p>
     </div>
   </div>
 
   <!-- FOOTER -->
-  <div class="footer">
+  <footer>
     © 2026 St. Teresa Children Learning Centre
     <br>
     <a href="privacy.html">Privacy</a>
     <a href="safeguarding.html">Safeguarding</a>
     <a href="terms.html">Terms</a>
-  </div>
+  </footer>
 
 </div>
 
 <script>
 const togglePassword = document.getElementById('togglePassword');
-const password = document.getElementById('password');
+const passwordInput = document.getElementById('password');
 
 togglePassword.addEventListener('click', () => {
-  if(password.type === 'password'){
-    password.type = 'text';
+  if(passwordInput.type === 'password'){
+    passwordInput.type = 'text';
     togglePassword.classList.replace('fa-eye', 'fa-eye-slash');
   } else {
-    password.type = 'password';
+    passwordInput.type = 'password';
     togglePassword.classList.replace('fa-eye-slash', 'fa-eye');
   }
 });
 
-const form = document.getElementById('loginForm');
-const error = document.getElementById('error');
+const loginForm = document.getElementById('loginForm');
+const loginError = document.getElementById('loginError');
 
-form.addEventListener('submit', (e)=>{
+loginForm.addEventListener('submit', function(e) {
   e.preventDefault();
 
   const username = document.getElementById('username').value.trim();
-  const pass = password.value.trim();
-  const remember = document.getElementById('rememberMe').checked;
+  const password = passwordInput.value.trim();
+  const rememberMe = document.getElementById('rememberMe').checked;
 
-  if(username === 'admin' && pass === 'admin123'){
-    if(remember){
-      localStorage.setItem('loggedIn', 'true');
-    } else {
-      sessionStorage.setItem('loggedIn', 'true');
-    }
+  if(username === 'admin' && password === 'admin123'){
+    if(rememberMe) localStorage.setItem('loggedIn','true');
+    else sessionStorage.setItem('loggedIn','true');
     window.location.href = 'admin.html';
   } else {
-    error.textContent = "Invalid username or password";
+    loginError.textContent = 'Invalid username or password';
   }
 });
 </script>
