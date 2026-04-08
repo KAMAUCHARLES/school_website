@@ -1,290 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Admin Login - St. Teresa Children Learning Centre</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Admin Login - St. Teresa Children Learning Centre</title>
 
-  <link rel="icon" href="favicon2.png" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="icon" href="favicon2.png" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /* Allow page to naturally scroll if needed, but keep footer always reachable */
-    html, body {
-      height: 100%;
-      font-family: 'Nunito', sans-serif;
-      background: linear-gradient(135deg, #5eda64, #66bb6a);
-    }
+html, body {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+}
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+/* Layout container */
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    /* Use flex column to push footer down, but content can scroll */
-    .page {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+/* Center area */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    /* Main content grows, footer stays at bottom */
-    .main {
-      flex: 1 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  padding: 30px 25px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
 
-    /* Login Card — responsive, never overlaps footer */
-    .login-card {
-      width: 100%;
-      max-width: 360px;
-      padding: 30px 25px;
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      margin: 16px 0;
-    }
+/* Logo */
+.logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
 
-    /* Logo & styling */
-    .logo {
-      width: 65px;
-      margin-bottom: 10px;
-    }
+/* School name */
+.school-name {
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
 
-    .school-name {
-      font-family: 'Comfortaa', cursive;
-      font-size: 18px;
-      color: #1b5e20;
-      margin-bottom: 20px;
-    }
+/* Title */
+.login-card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
 
-    .login-card h2 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      color: #2e7d32;
-    }
+/* Inputs */
+.input-group {
+  position: relative;
+  margin-bottom: 16px;
+}
 
-    /* Inputs */
-    .input-group {
-      position: relative;
-      margin-bottom: 16px;
-    }
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
 
-    .input-group input {
-      width: 100%;
-      padding: 12px 42px 12px 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-      transition: 0.2s;
-    }
+.input-group input:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 5px rgba(46,125,50,0.4);
+}
 
-    .input-group input:focus {
-      border-color: #2e7d32;
-      box-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
-      outline: none;
-    }
+/* Eye icon */
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
 
-    .toggle-password {
-      position: absolute;
-      right: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-      color: #666;
-    }
+/* Remember + Forgot */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
 
-    .options {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 13px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
-    .options label {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+.options input {
+  margin: 0;
+}
 
-    .options input {
-      margin: 0;
-    }
+.options a {
+  text-decoration: none;
+  color: #2e7d32;
+}
 
-    .options a {
-      text-decoration: none;
-      color: #2e7d32;
-    }
+.options a:hover {
+  text-decoration: underline;
+}
 
-    .options a:hover {
-      text-decoration: underline;
-    }
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-    button {
-      width: 100%;
-      padding: 12px;
-      background: #2e7d32;
-      border: none;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+button:hover {
+  background: #1b5e20;
+}
 
-    button:hover {
-      background: #1b5e20;
-    }
+/* Error */
+#error {
+  margin-top: 12px;
+  color: #dc3545;
+  font-size: 13px;
+}
 
-    #error {
-      margin-top: 12px;
-      color: red;
-      font-size: 13px;
-    }
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  background: #0e2e0e;
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-    /* ===== FOOTER - ALWAYS VISIBLE, NO OVERLAP ===== */
-    .footer {
-      flex-shrink: 0;          /* prevents footer from shrinking */
-      text-align: center;
-      font-size: 12px;
-      padding: 14px 12px;
-      background: #0e2e0e;
-      backdrop-filter: blur(6px);
-      border-top: 1px solid rgba(255, 255, 255, 0.25);
-      color: rgba(255, 255, 255, 0.8);
-      width: 100%;
-      margin-top: auto;         /* pushes footer to bottom when content short */
-      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
-    }
+.footer a {
+  margin: 0 8px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
 
-    /* Footer links - smaller text, NO underline on hover */
-    .footer a {
-      margin: 0 8px;
-      color: rgba(255, 255, 255, 0.75);
-      text-decoration: none;
-      font-weight: 400;
-      transition: 0.2s;
-      display: inline-block;
-      font-size: 10px;        /* smaller than default footer text */
-      letter-spacing: 0.3px;
-    }
+.footer a:hover {
+  color: #d4af37;
+  text-decoration: underline;
+}
 
-    /* remove underline completely on hover */
-    .footer a:hover {
-      color: #ffd966;
-      text-decoration: none;   /* explicitly no underline */
-    }
+/* MOBILE PERFECT FIT */
+@media (max-height: 700px) {
+  .login-card {
+    padding: 20px;
+  }
 
-    /* Responsive adjustments: make footer always visible & readable on small screens */
-    @media (max-width: 480px) {
-      .main {
-        padding: 12px;
-        align-items: center;
-      }
+  .school-name {
+    font-size: 16px;
+  }
 
-      .login-card {
-        padding: 20px 18px;
-        margin: 12px 0;
-      }
-
-      .logo {
-        width: 52px;
-      }
-
-      .school-name {
-        font-size: 15px;
-      }
-
-      .login-card h2 {
-        font-size: 19px;
-      }
-
-      .footer {
-        padding: 12px 8px;
-        font-size: 11px;
-        line-height: 1.45;
-      }
-
-      .footer div:first-child {
-        margin-bottom: 6px;
-      }
-
-      /* keep footer links even smaller on mobile */
-      .footer a {
-        margin: 4px 6px;
-        font-size: 9.5px;
-      }
-    }
-
-    /* extra small devices (<=360px) ensure footer text never hidden */
-    @media (max-width: 360px) {
-      .footer {
-        padding: 10px 6px;
-      }
-      .footer a {
-        margin: 3px 5px;
-        font-size: 9px;
-      }
-      .login-card {
-        padding: 16px 14px;
-      }
-      .input-group input {
-        padding: 10px 40px 10px 10px;
-      }
-      button {
-        padding: 10px;
-      }
-    }
-
-    /* ensure the body never cuts off footer */
-    @media (max-height: 550px) {
-      .main {
-        padding: 8px;
-      }
-      .login-card {
-        padding: 14px 16px;
-        margin: 8px 0;
-      }
-      .footer {
-        padding: 8px 6px;
-      }
-    }
-  </style>
+  .login-card h2 {
+    font-size: 20px;
+  }
+}
+</style>
 </head>
 
 <body>
+
 <div class="page">
-  <!-- MAIN CONTENT (centered login card) -->
+
+  <!-- CENTER -->
   <div class="main">
     <div class="login-card">
-      <img src="favicon2.png" class="logo" alt="St. Teresa Logo">
+      <img src="favicon2.png" class="logo" alt="logo">
       <div class="school-name">St. Teresa Children Learning Centre</div>
       <h2>Admin Login</h2>
 
       <form id="loginForm">
         <div class="input-group">
-          <input type="text" id="username" placeholder="Username" required autocomplete="username">
+          <input type="text" id="username" placeholder="Username" required>
         </div>
 
         <div class="input-group">
-          <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+          <input type="password" id="password" placeholder="Password" required>
           <i class="fa fa-eye toggle-password" id="togglePassword"></i>
         </div>
 
@@ -292,7 +216,7 @@
           <label>
             <input type="checkbox" id="rememberMe"> Remember me
           </label>
-          <a href="#" aria-label="Forgot password">Forgot password?</a>
+          <a href="#">Forgot password?</a>
         </div>
 
         <button type="submit">Login</button>
@@ -302,78 +226,53 @@
     </div>
   </div>
 
-  <!-- FOOTER with smaller links and no underline on hover -->
+  <!-- FOOTER -->
   <div class="footer">
-    <div>© 2026 St. Teresa Children Learning Centre</div>
-    <div class="footer-links">
-      <a href="privacy.html">Privacy</a>
-      <a href="safeguarding.html">Safeguarding</a>
-      <a href="terms.html">Terms & Conditions</a>
-    </div>
+    © 2026 St. Teresa Children Learning Centre
+    <br>
+    <a href="privacy.html">Privacy</a>
+    <a href="safeguarding.html">Safeguarding</a>
+    <a href="terms.html">Terms</a>
   </div>
+
 </div>
 
 <script>
-  (function() {
-    const togglePassword = document.getElementById('togglePassword');
-    const passwordInput = document.getElementById('password');
-    
-    if (togglePassword && passwordInput) {
-      togglePassword.addEventListener('click', function(e) {
-        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-        passwordInput.setAttribute('type', type);
-        // Toggle eye icon
-        if (type === 'text') {
-          togglePassword.classList.remove('fa-eye');
-          togglePassword.classList.add('fa-eye-slash');
-        } else {
-          togglePassword.classList.remove('fa-eye-slash');
-          togglePassword.classList.add('fa-eye');
-        }
-      });
+const togglePassword = document.getElementById('togglePassword');
+const password = document.getElementById('password');
+
+togglePassword.addEventListener('click', () => {
+  if(password.type === 'password'){
+    password.type = 'text';
+    togglePassword.classList.replace('fa-eye', 'fa-eye-slash');
+  } else {
+    password.type = 'password';
+    togglePassword.classList.replace('fa-eye-slash', 'fa-eye');
+  }
+});
+
+const form = document.getElementById('loginForm');
+const error = document.getElementById('error');
+
+form.addEventListener('submit', (e)=>{
+  e.preventDefault();
+
+  const username = document.getElementById('username').value.trim();
+  const pass = password.value.trim();
+  const remember = document.getElementById('rememberMe').checked;
+
+  if(username === 'admin' && pass === 'admin123'){
+    if(remember){
+      localStorage.setItem('loggedIn', 'true');
+    } else {
+      sessionStorage.setItem('loggedIn', 'true');
     }
-
-    const form = document.getElementById('loginForm');
-    const errorDiv = document.getElementById('error');
-    
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const usernameElem = document.getElementById('username');
-        const passwordElem = document.getElementById('password');
-        const rememberCheck = document.getElementById('rememberMe');
-
-        const username = usernameElem ? usernameElem.value.trim() : '';
-        const pass = passwordElem ? passwordElem.value.trim() : '';
-        const remember = rememberCheck ? rememberCheck.checked : false;
-
-        // Demo credentials: admin / admin123
-        if (username === 'admin' && pass === 'admin123') {
-          if (remember) {
-            localStorage.setItem('loggedIn', 'true');
-            // optional: store username for better UX
-            localStorage.setItem('adminUser', username);
-          } else {
-            sessionStorage.setItem('loggedIn', 'true');
-            sessionStorage.setItem('adminUser', username);
-          }
-          // Redirect to admin dashboard (admin.html)
-          window.location.href = 'admin.html';
-        } else {
-          if (errorDiv) {
-            errorDiv.textContent = "Invalid username or password";
-            // shake effect for better feedback (optional)
-            const card = document.querySelector('.login-card');
-            if (card) {
-              card.style.transform = 'translateX(4px)';
-              setTimeout(() => { if(card) card.style.transform = ''; }, 100);
-            }
-          }
-        }
-      });
-    }
-  })();
+    window.location.href = 'admin.html';
+  } else {
+    error.textContent = "Invalid username or password";
+  }
+});
 </script>
+
 </body>
 </html>
