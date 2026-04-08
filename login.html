@@ -6,86 +6,97 @@
 <title>Admin Login - St. Teresa Children Learning Centre</title>
 
 <link rel="icon" href="favicon2.png" type="image/x-icon"/>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  font-family: 'Nunito', sans-serif;
-  height: 100vh;
-  overflow: hidden; /* 🚀 NO SCROLL */
-  background: linear-gradient(135deg, #4caf50, #81c784);
-  display: flex;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Layout wrapper */
-.page {
-  display: flex;
-  flex-direction: column;
+/* NO SCROLL */
+html, body {
   height: 100%;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
 }
 
-/* Center area */
+/* Background */
+body {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+}
+
+/* Layout */
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center content */
 .main {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-/* Login card */
-.login-container {
-  background: rgba(255,255,255,0.95);
-  padding: 40px 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  text-align: center;
+/* Login Card */
+.login-card {
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
+  padding: 30px 25px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 /* Logo */
-.school-logo {
-  width: 80px;
-  margin-bottom: 8px;
+.logo {
+  width: 65px;
+  margin-bottom: 10px;
 }
 
 /* School name */
 .school-name {
   font-family: 'Comfortaa', cursive;
+  font-size: 18px;
   color: #1b5e20;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-/* Title */
-.login-container h2 {
-  color: #2e7d32;
-  font-size: 24px;
   margin-bottom: 20px;
 }
 
+/* Title */
+.login-card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
 /* Inputs */
-.input-wrapper {
+.input-group {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
-.login-container input {
+.input-group input {
   width: 100%;
-  padding: 11px 40px 11px 12px;
-  border-radius: 8px;
+  padding: 12px 42px 12px 12px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 0.95rem;
+  font-size: 14px;
+  transition: 0.2s;
 }
 
-.login-container input:focus {
+.input-group input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46,125,50,0.4);
   outline: none;
-  border-color: #388e3c;
 }
 
 /* Eye icon */
@@ -95,82 +106,113 @@ body {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #555;
+  color: #666;
 }
 
-/* Remember row */
-.remember-wrapper {
+/* Options */
+.options {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
-  font-size: 0.9rem;
+  font-size: 13px;
+  margin-bottom: 20px;
 }
 
-.remember-wrapper label {
+.options label {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.remember-wrapper input {
+.options input {
   margin: 0;
 }
 
-/* Button */
-.login-container button {
-  background: #2e7d32;
-  color: #fff;
-  padding: 12px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  font-weight: 700;
-  cursor: pointer;
+.options a {
+  text-decoration: none;
+  color: #2e7d32;
 }
 
-.login-container button:hover {
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
   background: #1b5e20;
 }
 
 /* Error */
-#loginError {
+#error {
+  margin-top: 12px;
   color: red;
-  margin-top: 10px;
-  font-size: 0.9rem;
+  font-size: 13px;
 }
 
-/* Footer */
-footer {
+/* ===== FOOTER (FIXED + STYLED) ===== */
+.footer {
   text-align: center;
-  background: #1b5e20;
-  color: #fff;
-  padding: 10px;
-  font-size: 0.85rem;
+  font-size: 12px;
+  padding: 12px 10px;
+  color: rgba(255,255,255,0.7);
+
+  background: #0e2e0e;
+  backdrop-filter: blur(6px);
+
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 
-footer a {
-  color: #a5d6a7;
+/* Footer links */
+.footer a {
   margin: 0 8px;
+  color: rgba(255,255,255,0.7);
   text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer a:hover {
+  color: #d4af37;
 }
 
-/* RESPONSIVE FIX */
-@media(max-height: 700px){
-  .login-container {
-    padding: 30px 20px;
+/* Mobile fine tuning */
+@media (max-width: 400px) {
+  .footer {
+    font-size: 11px;
+    padding: 10px 6px;
+  }
+
+  .footer a {
+    display: inline-block;
+    margin: 4px 6px;
+  }
+
+  .login-card {
+    padding: 20px;
+  }
+
+  .logo {
+    width: 50px;
   }
 
   .school-name {
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .login-container h2 {
-    font-size: 22px;
+  .login-card h2 {
+    font-size: 18px;
   }
 }
 </style>
@@ -182,76 +224,80 @@ footer a:hover {
 
   <!-- CENTER -->
   <div class="main">
-    <div class="login-container">
-      <img src="favicon2.png" class="school-logo" alt="Logo">
+    <div class="login-card">
+      <img src="favicon2.png" class="logo" alt="logo">
       <div class="school-name">St. Teresa Children Learning Centre</div>
       <h2>Admin Login</h2>
 
       <form id="loginForm">
-        <div class="input-wrapper">
+        <div class="input-group">
           <input type="text" id="username" placeholder="Username" required>
         </div>
 
-        <div class="input-wrapper">
+        <div class="input-group">
           <input type="password" id="password" placeholder="Password" required>
           <i class="fa fa-eye toggle-password" id="togglePassword"></i>
         </div>
 
-        <div class="remember-wrapper">
+        <div class="options">
           <label>
-            <input type="checkbox" id="rememberMe"> Remember Me
+            <input type="checkbox" id="rememberMe"> Remember me
           </label>
-          <a href="#">Forgot?</a>
+          <a href="#">Forgot password?</a>
         </div>
 
         <button type="submit">Login</button>
       </form>
 
-      <p id="loginError"></p>
+      <div id="error"></div>
     </div>
   </div>
 
   <!-- FOOTER -->
-  <footer>
-    © 2026 St. Teresa Children Learning Centre
-    <br>
-    <a href="privacy.html">Privacy</a>
-    <a href="safeguarding.html">Safeguarding</a>
-    <a href="terms.html">Terms</a>
-  </footer>
+  <div class="footer">
+    <div>© 2026 St. Teresa Children Learning Centre</div>
+    <div>
+      <a href="privacy.html">Privacy</a> 
+      <a href="safeguarding.html">Safeguarding</a> 
+      <a href="terms.html">Terms&Conditions</a>
+    </div>
+  </div>
 
 </div>
 
 <script>
 const togglePassword = document.getElementById('togglePassword');
-const passwordInput = document.getElementById('password');
+const password = document.getElementById('password');
 
 togglePassword.addEventListener('click', () => {
-  if(passwordInput.type === 'password'){
-    passwordInput.type = 'text';
+  if(password.type === 'password'){
+    password.type = 'text';
     togglePassword.classList.replace('fa-eye', 'fa-eye-slash');
   } else {
-    passwordInput.type = 'password';
+    password.type = 'password';
     togglePassword.classList.replace('fa-eye-slash', 'fa-eye');
   }
 });
 
-const loginForm = document.getElementById('loginForm');
-const loginError = document.getElementById('loginError');
+const form = document.getElementById('loginForm');
+const error = document.getElementById('error');
 
-loginForm.addEventListener('submit', function(e) {
+form.addEventListener('submit', (e)=>{
   e.preventDefault();
 
   const username = document.getElementById('username').value.trim();
-  const password = passwordInput.value.trim();
-  const rememberMe = document.getElementById('rememberMe').checked;
+  const pass = password.value.trim();
+  const remember = document.getElementById('rememberMe').checked;
 
-  if(username === 'admin' && password === 'admin123'){
-    if(rememberMe) localStorage.setItem('loggedIn','true');
-    else sessionStorage.setItem('loggedIn','true');
+  if(username === 'admin' && pass === 'admin123'){
+    if(remember){
+      localStorage.setItem('loggedIn', 'true');
+    } else {
+      sessionStorage.setItem('loggedIn', 'true');
+    }
     window.location.href = 'admin.html';
   } else {
-    loginError.textContent = 'Invalid username or password';
+    error.textContent = "Invalid username or password";
   }
 });
 </script>
